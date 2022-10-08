@@ -15,7 +15,7 @@ using namespace helib;
 using namespace std;
 using namespace NTL;
 
-#define multiThreads // 4 threads
+// #define multiThreads // 4 threads
 
 static long nBlocks = 20;
 
