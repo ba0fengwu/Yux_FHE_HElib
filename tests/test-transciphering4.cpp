@@ -24,9 +24,9 @@ int main(int argc, char **argv){
 
   //----FHE system setup begin----
   // ArgMapping amap;
-  long idx = 4;
+  long idx = 3;
   // amap.arg("sz", idx, "parameter-sets: toy=0 through huge=5");
-  long c=3;
+  long c=6;
   // amap.arg("c", c, "number of columns in the key-switching matrices");
 
   bool packed=true;
@@ -71,7 +71,8 @@ int main(int argc, char **argv){
   Context context(ContextBuilder<BGV>()
                 .m(m)
                 .p(p)
-                .r(1)
+                .r(1) 
+                .c(c)
                 .bits(bits)
                 .build());
   // cout << "[------context: " << context << "\n";
@@ -89,7 +90,7 @@ int main(int argc, char **argv){
 
   long e = mValues[idx][3] /8; // extension degree
   cout << "-----"<<context.getZMStar().getNSlots()<<" slots ("
-       << (context.getZMStar().getNSlots()/4)<<" blocks total), red(p) = "
+       << (context.getZMStar().getNSlots()/4)<<" blocks total), ord(p) = "
        << (context.getZMStar().getOrdP());
   if (packed)
     cout << ".  x"<<e<<" ctxts";

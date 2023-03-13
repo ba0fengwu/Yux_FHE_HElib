@@ -25,10 +25,10 @@ int main(int argc, char **argv){
   // ArgMapping amap;
   //            security Level/2，L, c, p,  d=16/24,  s=预计的槽数， chosen_m=0，false)
   // long FindM(long k, long L, long c, long p, long d, long s, long chosen_m, bool verbose)
-  long idx = 4;
+  long idx = 3;
   // amap.arg("sz", idx, "parameter-sets: toy=0 through huge=5");
 
-  long c=3;
+  long c=9;
   // amap.arg("c", c, "number of columns in the key-switching matrices");
 
   bool packed=true;

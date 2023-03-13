@@ -22,10 +22,10 @@ int main(int argc, char **argv){
 
   // ArgMapping amap;
 
-  long idx = 4; //0
+  long idx = 3; //0
   // amap.arg("sz", idx, "parameter-sets: toy=0 through huge=5");
 
-  long c=3;
+  long c=9;
   // amap.arg("c", c, "number of columns in the key-switching matrices");
 
   bool packed=true;
@@ -67,6 +67,7 @@ int main(int argc, char **argv){
                 .m(m)
                 .p(p)
                 .r(1)
+                .c(c)
                 .bits(bits)
                 .build());
   // initialize context
