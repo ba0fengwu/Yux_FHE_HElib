@@ -4,7 +4,7 @@
 #if 1
 //int main(int argc, char **argv)
 int main() {
-  int ROUND = 14;
+  int ROUND = 12;
   int BlockSize = 128;
   int BlockByte = BlockSize/8;
 

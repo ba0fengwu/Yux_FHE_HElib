@@ -9,6 +9,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 ## Require full C++ standard
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+## if Debug 
+set(CMAKE_BUILD_TYPE "Debug")
+
+
 #set(CMAKE_CXX_)
 #add_compile_options("-ferror-limit=40")
 
