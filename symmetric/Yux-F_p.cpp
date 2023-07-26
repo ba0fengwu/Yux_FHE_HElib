@@ -1,6 +1,6 @@
 
 #include <cstring>
-#include "Yux_F_p.h"
+#include "Yux-F_p.h"
 
 uint64_t Yux_F_p::Model_p(uint64_t state)
 {
