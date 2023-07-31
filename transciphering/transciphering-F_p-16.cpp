@@ -86,6 +86,8 @@ void Transcipher16_F_p::print_parameters() {
   std::cout << "|   plain_modulus: " << context->getP() << std::endl;
   std::cout << "|   cipher mod size (bits): " << context->bitSizeOfQ()
             << std::endl;
+  std::cout << "|   total bits: " << context->logOfProduct(context->allPrimes())
+            << std::endl;
   std::cout << "|   r: " << context->getR() << std::endl;
   std::cout << "|   sec level: " << context->securityLevel() << std::endl;
   std::cout << "\\" << std::endl;

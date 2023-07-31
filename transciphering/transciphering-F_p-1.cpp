@@ -144,6 +144,86 @@ void Transcipher1_F_p::encryptSymKey(vector<Ctxt>& eKey, vector<uint64_t>& round
       // he_pk.Encrypt(eKey[i], encoded[i]);
 }
 
+// Compute the constants for Sbox
+void Transcipher1_F_p::buildLinEnc2(vector<ZZX>& encLinTran)
+{
+  // encLinTran[0]: The constants only have nonzero entires in their slots corresponding
+  // to bytes 3,7,11,15 of each blocks // 0001000100010001
+  // encLinTran[1]: The constants only have nonzero entires in their slots corresponding
+  // to bytes 2,6,10,14 of each blocks // 0010001000100010
+  // encLinTran[1]: The constants only have zero entires in their slots corresponding
+  // to bytes 01,45,89,1213 of each blocks, others is 1; //1100110011001100
+
+  Vec<uint64_t> locates(INIT_SIZE, ea.size());
+  long blocksPerCtxt = ea.size() / 16;
+  Vec<ZZX> tmp;
+
+  memset(locates.data(), 0, locates.length());
+  /*
+    void Transcipher1::*memset(void Transcipher1::*s, int ch, size_t n);
+    函数解释：将s中前n个字节 （typedef unsigned int size_t）用 ch 替换并返回 s
+    讲bytes设置为0
+  */
+  for (long j=0; j<blocksPerCtxt; j++) {
+    uint64_t* bptr = &locates[16*j];
+    bptr[3] = bptr[7] = bptr[11] = bptr[15] = 1;
+  }
+  encodeTo1Ctxt(tmp, locates);
+  encLinTran[0] = tmp[0];
+
+  memset(locates.data(), 0, locates.length());
+  for (long j=0; j<blocksPerCtxt; j++) {
+    uint64_t* bptr = &locates[16*j];
+    bptr[2] = bptr[6] = bptr[10] = bptr[14] = 1;
+  }
+  encodeTo1Ctxt(tmp, locates);
+  encLinTran[1] = tmp[0];
+
+  memset(locates.data(), 0, locates.length());
+  for (long j=0; j<blocksPerCtxt; j++) {
+    uint64_t* bptr = &locates[16*j];
+    bptr[0] = bptr[1] = bptr[4] = bptr[5] = 1;
+    bptr[8] = bptr[9] = bptr[12] = bptr[13] = 1;
+  }
+  encodeTo1Ctxt(tmp, locates);
+  encLinTran[2] = tmp[0];
+}
+
+void Transcipher1_F_p::decSboxFunc2(Ctxt& c, vector<ZZX> encLinTran, Ctxt& encA){
+  // The basic rotation amount along the 1st dimension
+  long rotAmount = ea.getContext().getZMStar().OrderOf(0) / 16;
+
+  const ZZX& p3 = encLinTran[0];   // 0001000100010001
+  const ZZX& p2 = encLinTran[1];   // 0010001000100010
+  const ZZX& p01 = encLinTran[2];   //1100110011001100
+
+  c.cleanUp();
+  Ctxt c1(c), c2(c), c15(c);
+  ea.shift(c1, 1);
+  ea.shift(c2, 2);
+  ea.rotate(c15,-1);
+  c1.cleanUp();  c2.cleanUp(); c15.cleanUp();
+  
+  c1.multiplyBy(c);
+  c1 += c2;
+  c1 += encA;
+
+  Ctxt y3(c1);
+
+  y3.multByConstant(p3);
+
+  c15 += c1;
+  c15.multByConstant(p2);
+  Ctxt y2(c15); 
+  ea.shift(c15, 1); c15.cleanUp();
+  y3 += c15;
+
+  ea.rotate(c, 14); c.cleanUp();
+  c.multByConstant(p01);
+  c += y2;
+  c += y3;
+  c.cleanUp();
+}
 
 void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& symKey) 
 {
@@ -153,9 +233,14 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
   Ctxt encA(ZeroCtxtLike,symKey[0]);
   buildRoundConstant(encA);
 
+  vector<ZZX> encLinTran;
+  encLinTran.resize(3); 
+  buildLinEnc2(encLinTran);
+ 
+
   // apply the symmetric rounds
   // cout << "homSymDec Begin\n";
-  /*
+  
   for (long j=0; j<(long)eData.size(); j++) eData[j] -= symKey[0];  // initial key addition
   
   // There will be Nr rounds.
@@ -164,10 +249,10 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
   for (long i=1; i<pROUND; i++){ 
     for (long j=0; j<(long)eData.size(); j++){
       // // S Layer 
-      // for (long step=0; step<2; step++)
-      //   decSboxFunc2(eData[j], encLinTran, encA, ea);
+      for (long step=0; step<2; step++)
+        decSboxFunc2(eData[j], encLinTran, encA);
       // Linear Layer
-      Linear_function(eData[j]);
+      // Linear_function(eData[j]);
       // Add round key
       eData[j] -= symKey[i];
     }
@@ -180,8 +265,8 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
     for (long j=0; j<(long)eData.size(); j++){
       
       // S Layer 
-      // for (long step=0; step<2; step++)
-      //   decSboxFunc2(eData[j], encLinTran, encA, ea);
+      for (long step=0; step<2; step++)
+        decSboxFunc2(eData[j], encLinTran, encA);
       // Add round key
       eData[j] -= symKey[pROUND];
     }
@@ -190,7 +275,7 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
   // return to natural PrimeSet to save memery
   for (int i = 0; i < eData.size(); i++)
     eData[i].bringToSet(eData[i].naturalPrimeSet());
-    */
+    
 }
 
 void Transcipher1_F_p::Linear_function(Ctxt& c){
@@ -221,7 +306,7 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
 {
   {
     Vec<ZZX> encodedBytes;
-    encodeTo1Ctxt(encodedBytes, inBytes, nslots); // encode as HE plaintext 
+    encodeTo1Ctxt(encodedBytes, inBytes); // encode as HE plaintext 
     // Allocate space for the output ciphertexts, initialized to zero
     //eData.resize(encodedBytes.length());
     eData.resize(encodedBytes.length(), Ctxt(ZeroCtxtLike,symKey[0]));
@@ -229,20 +314,58 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
       eData[i].DummyEncrypt(encodedBytes[i]);
   }
     //-----------------------------------------------------------------------------
-  long rotAmount = ea.getContext().getZMStar().OrderOf(0) / BlockWords;
-  cout << " dimension() = " << ea.dimension() <<endl;
-  ea.rotate1D(eData[0],0,3*rotAmount);
-  eData[0].cleanUp();
+  // long rotAmount = ea.getContext().getZMStar().OrderOf(0)/4 ;
+  // cout << " dimension() = " << ea.getContext().getZMStar().OrderOf(0) <<endl;
+  // ea.rotate1D(eData[0],0,rotAmount);
+  // eData[0].cleanUp();
+
+    // eData[0].smartAutomorph(context->getPhiM()-1);
+    // // rotate(eData[0], 13);
 
   //------------------------------------------------------------------------
 
-  // FHE_YuxDecrypt(eData, symKey); // do the real work
+  FHE_YuxDecrypt(eData, symKey); // do the real work
+}
+
+
+//----------------------------------------------------------------
+void Transcipher1_F_p::rotate_rows(helib::Ctxt& ctxt, long step) {
+  ctxt.smartAutomorph(get_elt_from_step(step));
+}
+
+//----------------------------------------------------------------
+
+void Transcipher1_F_p::rotate_columns(helib::Ctxt& ctxt) {
+  ctxt.smartAutomorph(context->getPhiM() - 1);
+}
+
+//----------------------------------------------------------------
+
+void Transcipher1_F_p::rotate(helib::Ctxt& ctxt, long step) {
+    rotate_rows(ctxt, step);
+}
+
+//----------------------------------------------------------------
+
+long Transcipher1_F_p::get_elt_from_step(long step) {
+  long n2 = nslots << 1;
+  long row_size = nslots >> 1;
+  if (!step) return context->getPhiM() - 1;
+  long sign = step < 0;
+  long step_abs = sign ? -step : step;
+  if (step_abs >= row_size)
+    throw std::runtime_error("error: step count too large!");
+  step = sign ? row_size - step_abs : step_abs;
+
+  long gen = 3;
+  long elt = 1;
+  for (long i = 0; i < step; i++) elt = (elt * gen) % n2;
+  return elt;
 }
 
 
 // Encode plaintext/ciphertext bytes as native HE plaintext
-void Transcipher1_F_p::encodeTo1Ctxt(Vec<ZZX>& encData, const Vec<uint64_t>& data,
-		long s)
+void Transcipher1_F_p::encodeTo1Ctxt(Vec<ZZX>& encData, const Vec<uint64_t>& data)
 {
   long nAllBlocks = divc(data.length(), BlockWords); // ceil( data.length()/16 )
   cout<< "nBlocks = " << nAllBlocks << endl;

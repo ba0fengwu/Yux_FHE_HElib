@@ -291,7 +291,7 @@ long Yux_F_p::KeyExpansion(uint64_t RoundKey[], uint64_t Key[])
       for(j=0; j<4; j++)
       {
         x4[j] =  (x4[j] + RC[i][j] + RoundKey[x0id+j]) % modulus;
-        printf("RC[ij]: %04x", RC[i][j]);
+        // printf("RC[ij]: %04x ", RC[i][j]);
         RoundKey[x4id+j] = x4[j];
       }
       x4id +=4;

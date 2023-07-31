@@ -67,6 +67,8 @@ public:
   // run the Yux key-expansion and then encrypt the expanded key.
   void encryptSymKey(vector<Ctxt>& eKey, vector<uint64_t>& roundKeySchedule);
 
+  void buildLinEnc2(vector<ZZX>& encLinTran);
+  void decSboxFunc2(Ctxt& c, vector<ZZX> encLinTran, Ctxt& encA);
   void Linear_function(Ctxt& c);
   void FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& symKey);
   void buildRoundConstant(Ctxt& encA);
@@ -81,8 +83,13 @@ public:
 
   // Encode plaintext/ciphertext bytes as native HE plaintext
   // packing
-  void encodeTo1Ctxt(Vec<ZZX>& encData, const Vec<uint64_t>& data, long s);
+  void encodeTo1Ctxt(Vec<ZZX>& encData, const Vec<uint64_t>& data);
 
   vector<long> decrypt(helib::Ctxt& in, long n);
+
+  void rotate_rows(helib::Ctxt& ctxt, long step);
+  void rotate_columns(helib::Ctxt& ctxt);
+  void rotate(helib::Ctxt& ctxt, long step);
+  long get_elt_from_step(long step);
 
 };
