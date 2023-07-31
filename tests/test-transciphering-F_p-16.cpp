@@ -23,7 +23,7 @@ using namespace NTL;
 static long mValues[][3] = { 
 //{   p,       m,   bits}
   { 65537,  16384,  119}, // m=(3)*{257}
-  { 65537,  131072,  750}, // m=(3)*{257}
+  { 65537,  131072,  720}, // m=(3)*{257}
   { 65537,  65537,  600}, // m=(3)*{257}
   { 65537,  8191,  600}, // m=(3)*{257}
 
@@ -75,7 +75,7 @@ bool dec_test() {
     //   for (int d=0; d< Nk; d++)
     //   {
     //     cout<<d;
-    //     printf(". %05lx  ;",keySchedule[r*Nk+d]);
+    //     printf(". %05llx  ;",keySchedule[r*Nk+d]);
     //   }
     //   cout<< "\n";
     // }
@@ -94,7 +94,7 @@ bool dec_test() {
     printf("\nText after Yux encryption:\n");
     for(i=0;i<Nk;i++)
       {
-        printf("%05lx ",symEnced[i]);
+        printf("%05llx ",symEnced[i]);
       }
     printf("\n\n");
 
@@ -111,7 +111,7 @@ bool dec_test() {
       for (int d=0; d< Nk; d++)
       {
         cout<<d;
-        printf(". %05lx ",RoundKey_invert[r*Nk+d]);
+        printf(". %05llx ",RoundKey_invert[r*Nk+d]);
       }
       cout<< "\n";
     }
@@ -161,7 +161,7 @@ bool dec_test() {
     {
       FHE_cipher.decrypt(homEncrypted[i], poly[i]);
       cout<<i;
-      printf(". %05lx ",poly[i]);
+      printf(". %05llx ",poly[i]);
     }
     cout<<endl;
 
@@ -175,7 +175,7 @@ bool dec_test() {
     for(i=0;i<Nk;i++)
       {
         cout<<i;
-        printf(". %05lx ",symDeced[i]);
+        printf(". %05llx ",symDeced[i]);
       }
     printf("\n\n");
     printState_p(symDeced);  cout << endl;

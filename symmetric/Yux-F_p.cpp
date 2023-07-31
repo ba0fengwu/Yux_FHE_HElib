@@ -90,7 +90,7 @@ void Yux_F_p::decryption(uint64_t out[], uint64_t in[], uint64_t RoundKey[])
   // These Nr-1 rounds are executed in the loop below.
   for(r=1; r<ROUND; r++){
 
-    // decLinearLayer(out);
+
     // S Layer -- 4 sbox
     for(i=0; i<4; i++){
       decSboxFi(out, i*4);
@@ -223,7 +223,11 @@ void Yux_F_p::constantForKey(uint64_t RC[56][4])
       encSboxFi(tmp, 0);
 
       // mcsry RC[i]=tmp;
-      memcpy(&RC[i], &tmp[0], 4);
+      // memcpy(&RC[i], &tmp[0], 4);
+      for(j=0; j<4; j++) {
+        RC[i][j] = tmp[j];
+      }
+      // RC[i] = &tmp;
     }
 }
 
@@ -265,9 +269,9 @@ long Yux_F_p::KeyExpansion(uint64_t RoundKey[], uint64_t Key[])
     { 
 
       int x0id = i*4;
-      int x1id = x0id+4;
-      int x2id = x1id+4;
-      int x3id = x2id+4;
+      int x1id = i*4+4;
+      int x2id = i*4+8;
+      int x3id = i*4+12;
       // x4 = x1+x2+x3
       uint64_t x4[4];
       for(j=0;j<4;j++) 
@@ -287,7 +291,7 @@ long Yux_F_p::KeyExpansion(uint64_t RoundKey[], uint64_t Key[])
       for(j=0; j<4; j++)
       {
         x4[j] =  (x4[j] + RC[i][j] + RoundKey[x0id+j]) % modulus;
-        // printf("RC[ij]: %02x", RC[i][j]);
+        printf("RC[ij]: %04x", RC[i][j]);
         RoundKey[x4id+j] = x4[j];
       }
       x4id +=4;
