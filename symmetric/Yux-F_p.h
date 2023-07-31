@@ -9,11 +9,11 @@ using namespace std;
 class Yux_F_p{
 
   private:
-    int ROUND=12;
+    int ROUND=4;
     int BlockWords = 16;
     uint64_t Yux_p = 65537;
-    uint64_t modulus = 65536;
-    uint64_t roundConstant = 0x1122;
+    uint64_t modulus = 65537;
+    uint64_t roundConstant = 0xCD;
 
     uint64_t Model_p(uint64_t state);
     void addRoundKey(uint64_t state[], uint64_t RoundKey[], int round);

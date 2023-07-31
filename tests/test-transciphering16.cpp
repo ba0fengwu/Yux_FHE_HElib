@@ -7,6 +7,7 @@
 #include <helib/helib.h>
 #include <helib/ArgMap.h>
 #include <helib/DoubleCRT.h>
+#include <helib/timing.h>
 
 #include "../symmetric/spn-multi.h"
 #include "../transciphering/transciphering16.h"
@@ -68,7 +69,7 @@ int main(int argc, char **argv){
   cout << "computing key-independent tables..." << std::flush;
   // Some code here to choose all the parameters, perhaps
   // using the fucntion FindM(...) in the FHEContext module  
-
+  // startFHEtimer("setup");
   Context context(ContextBuilder<BGV>()
                   .m(m)
                   .p(p)
@@ -77,7 +78,7 @@ int main(int argc, char **argv){
                   .bits(bits)
                   .build());
 
-  
+  // stopFHEtimer("setup");
   tm += GetTime();
   cout << "done in "<<tm<<" seconds\n";
 
@@ -131,6 +132,8 @@ int main(int argc, char **argv){
   long nslots = ea.size(); // number of plaintext slots
   cout << "-----number of plaintext slots: " << nslots << "\n\n";
   //----FHE system setup End----
+
+  cout << " !!!!!!!!!!!!dimension() = " << ea.dimension() <<endl;
 
     
   GF2X rnd;

@@ -1,6 +1,6 @@
 #include <cstring>
 #include "spn-multi.h"
-// The round number is ROUND =10
+// The round number is ROUND =12
 
 static const unsigned char roundConstant = 0xCD;
 static const unsigned char roundConstant_4bit = 0xD; // x^3+x^2+1

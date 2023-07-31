@@ -28,7 +28,7 @@ int main() {
       in[i]=plain1[i];
     }
 
-  Yux_F_p cipher = Yux_F_p(Nk, 12, 65537);
+  Yux_F_p cipher = Yux_F_p(Nk, Nr, 65537);
   //             ********************************************************
   // The KeyExpansion routine must be called before encryption.
   cipher.KeyExpansion(RoundKey, Key);
@@ -44,7 +44,7 @@ int main() {
       for (int d=0; d< Nk; d++)
       {
         cout<<d;
-        printf(". %05x ;",RoundKey[r*Nk+d]);
+        printf(". %05lx ",RoundKey[r*Nk+d]);
       }
       cout<< "\n";
     }
@@ -57,7 +57,7 @@ int main() {
       for (int d=0; d< Nk; d++)
       {
         cout<<d;
-        printf(". %05x ;",RoundKey_invert[r*Nk+d]);
+        printf(". %05lx ",RoundKey_invert[r*Nk+d]);
       }
       cout<< "\n";
     }
@@ -69,7 +69,7 @@ int main() {
   printf("\nText after encryption:\n");
   for(i=0;i<Nk;i++)
     {
-      printf("%05x ",enced[i]);
+      printf("%05lx ",enced[i]);
     }
   printf("\n\n");
 
@@ -79,14 +79,14 @@ int main() {
   printf("\nText after decryption:\n");
   for(i=0;i<Nk;i++)
     {
-      printf("%05x ",deced[i]);
+      printf("%05lx ",deced[i]);
     }
   printf("\n\n");
   
   printf("\nText before encryption:\n");
   for(i=0;i<Nk;i++)
     {
-      printf("%05x ",in[i]);
+      printf("%05lx ",in[i]);
     }
   printf("\n\n");
 
@@ -158,7 +158,7 @@ int main() {
   for (int d=0; d< 16; d++)
   {
     cout<<d;
-    printf(". %05x ;",x[d]);
+    printf(". %05lx ;",x[d]);
   }
   cout << endl;
 
@@ -171,7 +171,7 @@ int main() {
   for (int d=0; d< 16; d++)
   {
     cout<<d;
-    printf(". %05x ;",x[d]);
+    printf(". %05lx ;",x[d]);
   }
   cout << endl;
 }

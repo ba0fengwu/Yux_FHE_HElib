@@ -145,7 +145,7 @@ int main(int argc, char **argv){
   long nslots = ea.size();
   // number of plaintext slots
   cout << "-----number of plaintext slots: " << nslots << "\n\n";
-    
+      cout << " !!!!!!!!!!!!dimension() = " << ea.dimension() <<endl;
   GF2X rnd;
   //  生成秘钥 Vec_length = BlockByte
   Vec<uint8_t> symKey(INIT_SIZE, BlockByte); // 8*BlockByte
