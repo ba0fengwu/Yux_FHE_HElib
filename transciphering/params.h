@@ -9,6 +9,7 @@ static long ROUND = 12;
 static long BlockSize = 128;
 static long BlockByte = BlockSize/8;
 
+// F_p 全局变量
 static long pROUND = 8;
 static long BlockWords = 16;
 // 分组数量

@@ -20,12 +20,12 @@ using namespace NTL;
 //#define DEBUG
 // #define homEnc
 
-static long mValues[][3] = { 
-//{   p,       m,   bits}
-  { 65537,  16384,  119}, // m=(3)*{257}
-  { 65537,  131072,  750}, // m=(3)*{257}
-  { 65537,  65537,  600}, // m=(3)*{257}
-  { 65537,  8191,  600}, // m=(3)*{257}
+static long mValues[][4] = { 
+//{   p,       m,   c,  bits}
+  { 65537,  16384,  2,  120}, //0
+  { 65537,  32768,  4,  750}, //1
+  { 65537,  65536,  12,  750}, //4,3,2
+  { 65537,  131072, 2, 750},  
 
 
   // { 65537,   4369,  360}, // m=17*(257)
@@ -38,7 +38,10 @@ static long mValues[][3] = {
 bool dec_test() {
   chrono::high_resolution_clock::time_point time_start, time_end;
   chrono::milliseconds time_diff;
-
+    int idx = 2;
+    if (idx >3) {
+      idx = 2;
+    }
     int i, Nr=pROUND; // Nr is round number
     int Nk= 16; // a block has Nk Words
     long plain_mod = 65537;
@@ -75,15 +78,12 @@ bool dec_test() {
     //   for (int d=0; d< Nk; d++)
     //   {
     //     cout<<d;
-    //     printf(". %05llx  ;",keySchedule[r*Nk+d]);
+    //     printf(". %05lx  ;",keySchedule[r*Nk+d]);
     //   }
     //   cout<< "\n";
     // }
     // printf("\nroundKeySchedule---END!\n");
-    int idx = 1;
-    if (idx >5) {
-      idx = 0;
-    }
+
 
     // 1. Symmetric encryption: symCtxt = Enc(symKey, ptxt) 
     for (long i=0; i<nBlocks; i++) {
@@ -94,7 +94,7 @@ bool dec_test() {
     printf("\nText after Yux encryption:\n");
     for(i=0;i<Nk;i++)
       {
-        printf("%05llx ",symEnced[i]);
+        printf("%05lx ",symEnced[i]);
       }
     printf("\n\n");
 
@@ -111,14 +111,14 @@ bool dec_test() {
       for (int d=0; d< Nk; d++)
       {
         cout<<d;
-        printf(". %05llx ",RoundKey_invert[r*Nk+d]);
+        printf(". %05lx ",RoundKey_invert[r*Nk+d]);
       }
       cout<< "\n";
     }
     printf("\nRoundKey_invert---END!\n");
 
-    auto context = Transcipher16_F_p::create_context(mValues[idx][1], mValues[idx][0], /*r=*/1, mValues[idx][2], 
-                                                      /*c=*/2, /*d=*/1, /*k=*/128, /*s=*/1);
+    auto context = Transcipher16_F_p::create_context(mValues[idx][1], mValues[idx][0], /*r=*/1, /*bits*/ mValues[idx][3], 
+                                                      /*c=*/ mValues[idx][2], /*d=*/1, /*k=*/128, /*s=*/1);
     Transcipher16_F_p FHE_cipher(context);
     FHE_cipher.print_parameters();
     // cipher.activate_bsgs(use_bsgs);
@@ -161,7 +161,7 @@ bool dec_test() {
     {
       FHE_cipher.decrypt(homEncrypted[i], poly[i]);
       cout<<i;
-      printf(". %05llx ",poly[i]);
+      printf(". %05lx ",poly[i]);
     }
     cout<<endl;
 
@@ -175,7 +175,7 @@ bool dec_test() {
     for(i=0;i<Nk;i++)
       {
         cout<<i;
-        printf(". %05llx ",symDeced[i]);
+        printf(". %05lx ",symDeced[i]);
       }
     printf("\n\n");
     printState_p(symDeced);  cout << endl;

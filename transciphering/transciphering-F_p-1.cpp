@@ -314,17 +314,19 @@ void Transcipher1_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& s
       eData[i].DummyEncrypt(encodedBytes[i]);
   }
     //-----------------------------------------------------------------------------
-  // long rotAmount = ea.getContext().getZMStar().OrderOf(0)/4 ;
-  // cout << " dimension() = " << ea.getContext().getZMStar().OrderOf(0) <<endl;
-  // ea.rotate1D(eData[0],0,rotAmount);
-  // eData[0].cleanUp();
+  long rotAmount = ea.getContext().getZMStar().OrderOf(0)/16 ;
+  cout << " dimension() = " << ea.dimension() <<endl;
+  // ea.rotate(eData[0],1);
+  ea.rotate1D(eData[0],0,1);
+
+  eData[0].cleanUp();
 
     // eData[0].smartAutomorph(context->getPhiM()-1);
-    // // rotate(eData[0], 13);
+    // rotate(eData[0], 13);
 
   //------------------------------------------------------------------------
 
-  FHE_YuxDecrypt(eData, symKey); // do the real work
+  // FHE_YuxDecrypt(eData, symKey); // do the real work
 }
 
 
