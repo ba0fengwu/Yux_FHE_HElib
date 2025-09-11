@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <chrono>
 #include <iostream>
-#include "../Yux/Yux-F_p.h"
+#include "../Yux/Yux-dagger-F_p.h"
 #include <cmath>
 
 using namespace std;
@@ -25,7 +25,7 @@ void test_encryption(int Nr) {
         in[i] = plain1[i];
     }
 
-    Yux_F_p cipher = Yux_F_p(Nk, Nr, 65537);
+    Yux_dagger_F_p cipher = Yux_dagger_F_p(Nk, Nr, 65537);
     
     // Key expansion
     cipher.KeyExpansion(RoundKey, Key);

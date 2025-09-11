@@ -25,13 +25,16 @@ endif()
 
 
 # add symmetric library
-aux_source_directory("${CMAKE_SOURCE_DIR}/symmetric" SYMMETRIC_SRC_LIST)
+aux_source_directory("${CMAKE_SOURCE_DIR}/Yux" SYMMETRIC_SRC_LIST)
 add_library(Symmetric ${SYMMETRIC_SRC_LIST})
+target_include_directories(Symmetric PUBLIC "/usr/local/helib_pack/include")
+
 
 aux_source_directory("${CMAKE_SOURCE_DIR}/transciphering" TRANSCIPHER_SRC_LIST)
 add_library(Transcipher ${TRANSCIPHER_SRC_LIST})
 # add NTL include directory
-target_include_directories(Transcipher PUBLIC "/usr/local/include")
+target_include_directories(Transcipher PUBLIC "/usr/local/helib_pack/include")
+
 
 message(STATUS "beark 1: ${TRANSCIPHER_SRC_LIST}")
 

@@ -2,18 +2,18 @@
 #include <stdint.h>
 #include <chrono>
 #include <helib/helib.h>
-#include "../transciphering/transciphering-F_p-16.h"
+#include "../transciphering/transciphering-dagger-F_p-16.h"
 
 using namespace helib;
 using namespace std;
 using namespace NTL;
 
 #define homDec
+
 // static long mValues[][4] = { 
-//   { 65537,  16384,  2,  120},
-//   { 65537,  32768,  4,  750},
-//   { 65537,  65536,  12,  750},
-//   { 65537,  131072, 2, 750},  
+// //{   p,       m,   bits}
+//   { 65537,  131072,  1320, 6}, // m=(3)*{257} 1250
+//   { 65537,  65536,  853, 17},
 // };
 
 static long mValues[][4] = { 
@@ -24,10 +24,10 @@ static long mValues[][4] = {
 };
 
 bool dec_test() {
-    // static long pROUND = 8 ;
     int i, Nr=pROUND;
-        int idx = -1;
-    if (Nr == 9) {
+
+    int idx = -1;
+    if (Nr == 2) {
       idx = 0;
     }
     else if (Nr == 12) {
@@ -36,7 +36,7 @@ bool dec_test() {
     else if (Nr == 14) {
       idx = 2;
     }
-    
+
     int Nk= 16;
     long plain_mod = 65537;
     long roundKeySize = (Nr+1)*Nk;
@@ -57,7 +57,7 @@ bool dec_test() {
         ptxt[i]=plain1[i];
     }
 
-    Yux_F_p cipher = Yux_F_p(Nk, Nr, plain_mod);
+    Yux_dagger_F_p cipher = Yux_dagger_F_p(Nk, Nr, plain_mod);
     
     uint64_t keySchedule[roundKeySize];
     cipher.KeyExpansion(keySchedule, Key);
@@ -73,7 +73,7 @@ bool dec_test() {
     }
     printf("\n\n");
 
-        printf("\nText about Roundkey:\n");
+    printf("\nText about Roundkey:\n");
     for(i=0;i<Nk;i++) {
         printf("%05lx ",keySchedule[i]);
     }
@@ -82,9 +82,9 @@ bool dec_test() {
     uint64_t RoundKey_invert[roundKeySize];
     cipher.decRoundKey(RoundKey_invert, keySchedule);
 
-    auto context = Transcipher16_F_p::create_context(mValues[idx][1], mValues[idx][0], /*r=*/1, /*bits*/ mValues[idx][2], 
+    auto context = Transcipher16_dagger_F_p::create_context(mValues[idx][1], mValues[idx][0], /*r=*/1, /*bits*/ mValues[idx][2], 
                                                       /*c=*/ mValues[idx][3], /*d=*/1, /*k=*/128, /*s=*/1);
-    Transcipher16_F_p FHE_cipher(context);
+    Transcipher16_dagger_F_p FHE_cipher(context);
     FHE_cipher.print_parameters();
     FHE_cipher.create_pk();
 
@@ -105,7 +105,7 @@ bool dec_test() {
     vector<Ctxt> homEncrypted_warm;
     FHE_cipher.FHE_YuxDecrypt(homEncrypted_warm, heKey, symEnced);
 
-    // timing
+    // Timing
     long total_time = 0;
     vector<Ctxt> homEncrypted_temp;
     cout << "Running FHE_YuxDecrypt 10 times..." << endl;
@@ -181,4 +181,3 @@ bool dec_test() {
 int main(int argc, char **argv){
    dec_test();
 }
-
