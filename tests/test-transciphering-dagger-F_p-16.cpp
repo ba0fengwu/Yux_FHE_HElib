@@ -131,7 +131,6 @@ void test_homo_decryption(int test_round, const vector<vector<uint64_t>>& test_d
          << " milliseconds" << endl;
 
     }
-
     
     // running time
     double avg_time = total_time / 1e3 / test_round; 
