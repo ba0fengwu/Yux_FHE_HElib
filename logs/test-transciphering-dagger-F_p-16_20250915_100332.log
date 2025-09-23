@@ -1,0 +1,2664 @@
+=== Running ./tests/test-transciphering-dagger-F_p-16 at Mon Sep 15 10:03:32 CST 2025 ===
+create_context...  m =  131072
+Transcipher16_dagger_F_p init ...
+/
+| Encryption parameters:
+|   scheme: BGV 
+|   slots: 32768
+|   bootstrappable: 0
+|   m: 131072
+|   phi(m): 65536
+|   plain_modulus: 65537
+|   cipher mod size (bits): 1474
+|   total bits: 1222.07
+|   r: 1
+|   sec level: 149.162
+\
+HE encrypting key...ekey.size() = 208
+1. 0976e 2. 0edba 3. 0293d 4. 0a662 5. 00b3c 6. 01f3a 7. 0c553 8. 0fcbe 9. 087b9 10. 04e2e 11. 081fb 12. 0d8bf 13. 05409 14. 0debd 15. 050df 0. 0849f 
+1. 00373 2. 03ccc 3. 07dd8 4. 03d0a 5. 042ce 6. 07da6 7. 01f3e 8. 09b4b 9. 05aa5 10. 02a46 11. 09e16 12. 04516 13. 09fe6 14. 0752f 15. 015ef 0. 01de9 
+1. 026e7 2. 02237 3. 0cd5a 4. 0d8b8 5. 0b45f 6. 0f7c3 7. 0b654 8. 0504c 9. 04f64 10. 017bb 11. 0a3e8 12. 09e4c 13. 07094 14. 06531 15. 0e5fc 0. 038bc 
+1. 05f1d 2. 0a243 3. 0b063 4. 007f7 5. 0df57 6. 07eb5 7. 07982 8. 08d29 9. 02c46 10. 004b4 11. 0160b 12. 0b1f6 13. 0fd7a 14. 04579 15. 06857 0. 0478d 
+1. 0bd70 2. 04bc1 3. 058c7 4. 06871 5. 05ac2 6. 036fa 7. 01da2 8. 0d6a9 9. 0cb68 10. 05ff9 11. 0ccb8 12. 04936 13. 0ba73 14. 0f6f8 15. 08403 0. 01e1e 
+1. 0e58d 2. 0eaee 3. 003ee 4. 05309 5. 0c8ea 6. 0fdd1 7. 02ebe 8. 098dd 9. 01ab3 10. 0355d 11. 0b8c4 12. 07d3e 13. 07026 14. 0da20 15. 0bef5 0. 0c922 
+1. 05957 2. 01e6b 3. 06207 4. 00b64 5. 0b5c0 6. 05301 7. 0a172 8. 0af7a 9. 05daf 10. 0d27b 11. 00ae7 12. 05974 13. 05ede 14. 098c0 15. 0ad49 0. 09bd3 
+1. 06f18 2. 0490e 3. 04e07 4. 0831e 5. 0c079 6. 0e808 7. 09c21 8. 009ca 9. 063ba 10. 00342 11. 03ecf 12. 0157a 13. 0da20 14. 00c7c 15. 0e975 0. 04528 
+1. 03b6a 2. 0829a 3. 00e5d 4. 06847 5. 0e4a0 6. 06d17 7. 0eaf2 8. 0cc61 9. 0d7f6 10. 0ccba 11. 04e44 12. 0957a 13. 0332a 14. 0f4ae 15. 0a5e4 0. 09621 
+1. 0865d 2. 072d7 3. 01c67 4. 04b5f 5. 0d35f 6. 04aea 7. 0d9a0 8. 07612 9. 090d7 10. 08b0d 11. 0d678 12. 08cc2 13. 0f666 14. 0f470 15. 040a7 0. 0a78b 
+1. 0d689 2. 05f21 3. 09944 4. 00307 5. 05a82 6. 0610a 7. 008c6 8. 0e494 9. 0ede6 10. 00276 11. 0f7af 12. 0f128 13. 001ef 14. 0be71 15. 0eaf3 0. 098bf 
+1. 0ad31 2. 05107 3. 0545c 4. 03b28 5. 08b2a 6. 08cdb 7. 09825 8. 03c1d 9. 0143c 10. 0eae5 11. 088b2 12. 0dd66 13. 08878 14. 03fbb 15. 0a9a6 0. 0169f 
+1. 00000 2. 00000 3. 00000 4. 00000 5. 00000 6. 00000 7. 00000 8. 00000 9. 00000 10. 00000 11. 00000 12. 00000 13. 00000 14. 00000 15. 00000 0. 00000 
+...done in 46164 ms
+initial noise:
+min noise budget: 1220
+max noise budget: 1220
+round 1 min noise budget: 1129
+max noise budget: 1136
+round 2 min noise budget: 1045
+max noise budget: 1058
+round 3 min noise budget: 965
+max noise budget: 975
+round 4 min noise budget: 886
+max noise budget: 894
+round 5 min noise budget: 792
+max noise budget: 801
+round 6 min noise budget: 702
+max noise budget: 716
+round 7 min noise budget: 602
+max noise budget: 618
+round 8 min noise budget: 510
+max noise budget: 526
+round 9 min noise budget: 418
+max noise budget: 435
+round 10 min noise budget: 328
+max noise budget: 343
+round 11 min noise budget: 235
+max noise budget: 254
+homSymDec Finish! 
+min noise budget: 156
+max noise budget: 203
+Running FHE_YuxDecrypt 100 times...
+round 1 min noise budget: 1129
+max noise budget: 1136
+round 2 min noise budget: 1040
+max noise budget: 1058
+round 3 min noise budget: 939
+max noise budget: 957
+round 4 min noise budget: 840
+max noise budget: 859
+round 5 min noise budget: 749
+max noise budget: 764
+round 6 min noise budget: 652
+max noise budget: 673
+round 7 min noise budget: 562
+max noise budget: 579
+round 8 min noise budget: 466
+max noise budget: 488
+round 9 min noise budget: 367
+max noise budget: 389
+round 10 min noise budget: 275
+max noise budget: 291
+round 11 min noise budget: 182
+max noise budget: 198
+homSymDec Finish! 
+min noise budget: 101
+max noise budget: 151
+the FHE_YuxDecrypt time in 0 runs: 201914 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1036
+round 3 min noise budget: 926
+max noise budget: 943
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 645
+max noise budget: 665
+round 7 min noise budget: 542
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 468
+round 9 min noise budget: 359
+max noise budget: 375
+round 10 min noise budget: 267
+max noise budget: 283
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 1 runs: 200294 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1136
+round 2 min noise budget: 1020
+max noise budget: 1041
+round 3 min noise budget: 931
+max noise budget: 947
+round 4 min noise budget: 837
+max noise budget: 854
+round 5 min noise budget: 746
+max noise budget: 762
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 544
+max noise budget: 555
+round 8 min noise budget: 452
+max noise budget: 469
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 268
+max noise budget: 284
+round 11 min noise budget: 167
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 137
+the FHE_YuxDecrypt time in 2 runs: 199979 milliseconds
+round 1 min noise budget: 1123
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1041
+round 3 min noise budget: 927
+max noise budget: 945
+round 4 min noise budget: 835
+max noise budget: 851
+round 5 min noise budget: 743
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 470
+round 9 min noise budget: 361
+max noise budget: 377
+round 10 min noise budget: 269
+max noise budget: 286
+round 11 min noise budget: 174
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 95
+max noise budget: 144
+the FHE_YuxDecrypt time in 3 runs: 199586 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 827
+max noise budget: 851
+round 5 min noise budget: 736
+max noise budget: 752
+round 6 min noise budget: 638
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 357
+max noise budget: 372
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 4 runs: 200638 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 945
+round 4 min noise budget: 831
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 642
+max noise budget: 665
+round 7 min noise budget: 541
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 351
+max noise budget: 372
+round 10 min noise budget: 261
+max noise budget: 278
+round 11 min noise budget: 162
+max noise budget: 180
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 131
+the FHE_YuxDecrypt time in 5 runs: 199823 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 926
+max noise budget: 941
+round 4 min noise budget: 825
+max noise budget: 850
+round 5 min noise budget: 722
+max noise budget: 736
+round 6 min noise budget: 630
+max noise budget: 645
+round 7 min noise budget: 538
+max noise budget: 555
+round 8 min noise budget: 446
+max noise budget: 461
+round 9 min noise budget: 347
+max noise budget: 369
+round 10 min noise budget: 255
+max noise budget: 272
+round 11 min noise budget: 160
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 6 runs: 200295 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1036
+round 3 min noise budget: 929
+max noise budget: 946
+round 4 min noise budget: 836
+max noise budget: 853
+round 5 min noise budget: 745
+max noise budget: 762
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 542
+max noise budget: 557
+round 8 min noise budget: 450
+max noise budget: 466
+round 9 min noise budget: 358
+max noise budget: 374
+round 10 min noise budget: 266
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 134
+the FHE_YuxDecrypt time in 7 runs: 202578 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 851
+round 5 min noise budget: 738
+max noise budget: 755
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 352
+max noise budget: 373
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 8 runs: 201973 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 829
+max noise budget: 851
+round 5 min noise budget: 739
+max noise budget: 757
+round 6 min noise budget: 638
+max noise budget: 657
+round 7 min noise budget: 540
+max noise budget: 557
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 347
+max noise budget: 371
+round 10 min noise budget: 251
+max noise budget: 274
+round 11 min noise budget: 159
+max noise budget: 175
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 9 runs: 201340 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1133
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 942
+round 4 min noise budget: 834
+max noise budget: 850
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 665
+round 7 min noise budget: 544
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 468
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 266
+max noise budget: 283
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 137
+the FHE_YuxDecrypt time in 10 runs: 201822 milliseconds
+round 1 min noise budget: 1120
+max noise budget: 1134
+round 2 min noise budget: 1019
+max noise budget: 1038
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 829
+max noise budget: 850
+round 5 min noise budget: 738
+max noise budget: 756
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 465
+round 9 min noise budget: 356
+max noise budget: 374
+round 10 min noise budget: 264
+max noise budget: 283
+round 11 min noise budget: 169
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 137
+the FHE_YuxDecrypt time in 11 runs: 201447 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 828
+max noise budget: 850
+round 5 min noise budget: 739
+max noise budget: 755
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 374
+round 10 min noise budget: 264
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 134
+the FHE_YuxDecrypt time in 12 runs: 201345 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1036
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 831
+max noise budget: 853
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 668
+round 7 min noise budget: 544
+max noise budget: 562
+round 8 min noise budget: 454
+max noise budget: 471
+round 9 min noise budget: 361
+max noise budget: 376
+round 10 min noise budget: 268
+max noise budget: 285
+round 11 min noise budget: 167
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 89
+max noise budget: 137
+the FHE_YuxDecrypt time in 13 runs: 202083 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 851
+round 5 min noise budget: 745
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 542
+max noise budget: 555
+round 8 min noise budget: 450
+max noise budget: 468
+round 9 min noise budget: 358
+max noise budget: 374
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 14 runs: 202886 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1133
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 930
+max noise budget: 945
+round 4 min noise budget: 836
+max noise budget: 854
+round 5 min noise budget: 745
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 452
+max noise budget: 469
+round 9 min noise budget: 360
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 177
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 98
+max noise budget: 146
+the FHE_YuxDecrypt time in 15 runs: 202556 milliseconds
+round 1 min noise budget: 1123
+max noise budget: 1135
+round 2 min noise budget: 1025
+max noise budget: 1042
+round 3 min noise budget: 934
+max noise budget: 954
+round 4 min noise budget: 838
+max noise budget: 857
+round 5 min noise budget: 748
+max noise budget: 764
+round 6 min noise budget: 648
+max noise budget: 671
+round 7 min noise budget: 556
+max noise budget: 575
+round 8 min noise budget: 459
+max noise budget: 471
+round 9 min noise budget: 360
+max noise budget: 377
+round 10 min noise budget: 270
+max noise budget: 286
+round 11 min noise budget: 179
+max noise budget: 195
+homSymDec Finish! 
+min noise budget: 100
+max noise budget: 146
+the FHE_YuxDecrypt time in 16 runs: 202742 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1039
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 827
+max noise budget: 850
+round 5 min noise budget: 736
+max noise budget: 753
+round 6 min noise budget: 638
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 351
+max noise budget: 370
+round 10 min noise budget: 260
+max noise budget: 277
+round 11 min noise budget: 159
+max noise budget: 173
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 17 runs: 203180 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1130
+round 2 min noise budget: 1019
+max noise budget: 1037
+round 3 min noise budget: 929
+max noise budget: 943
+round 4 min noise budget: 831
+max noise budget: 853
+round 5 min noise budget: 741
+max noise budget: 757
+round 6 min noise budget: 642
+max noise budget: 665
+round 7 min noise budget: 541
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 356
+max noise budget: 373
+round 10 min noise budget: 265
+max noise budget: 284
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 18 runs: 203656 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 929
+max noise budget: 943
+round 4 min noise budget: 836
+max noise budget: 852
+round 5 min noise budget: 745
+max noise budget: 760
+round 6 min noise budget: 646
+max noise budget: 672
+round 7 min noise budget: 543
+max noise budget: 562
+round 8 min noise budget: 454
+max noise budget: 470
+round 9 min noise budget: 360
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 283
+round 11 min noise budget: 172
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 92
+max noise budget: 143
+the FHE_YuxDecrypt time in 19 runs: 203587 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1134
+round 2 min noise budget: 1019
+max noise budget: 1040
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 741
+max noise budget: 759
+round 6 min noise budget: 643
+max noise budget: 665
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 356
+max noise budget: 374
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 133
+the FHE_YuxDecrypt time in 20 runs: 200378 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 826
+max noise budget: 850
+round 5 min noise budget: 729
+max noise budget: 749
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 356
+max noise budget: 374
+round 10 min noise budget: 265
+max noise budget: 281
+round 11 min noise budget: 168
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 21 runs: 203703 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 826
+max noise budget: 852
+round 5 min noise budget: 729
+max noise budget: 752
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 465
+round 9 min noise budget: 349
+max noise budget: 373
+round 10 min noise budget: 260
+max noise budget: 279
+round 11 min noise budget: 160
+max noise budget: 173
+homSymDec Finish! 
+min noise budget: 80
+max noise budget: 126
+the FHE_YuxDecrypt time in 22 runs: 202327 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 946
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 356
+max noise budget: 373
+round 10 min noise budget: 266
+max noise budget: 284
+round 11 min noise budget: 168
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 23 runs: 202632 milliseconds
+round 1 min noise budget: 1125
+max noise budget: 1136
+round 2 min noise budget: 1030
+max noise budget: 1041
+round 3 min noise budget: 937
+max noise budget: 955
+round 4 min noise budget: 838
+max noise budget: 856
+round 5 min noise budget: 748
+max noise budget: 763
+round 6 min noise budget: 646
+max noise budget: 672
+round 7 min noise budget: 549
+max noise budget: 572
+round 8 min noise budget: 458
+max noise budget: 471
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 268
+max noise budget: 286
+round 11 min noise budget: 167
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 24 runs: 204643 milliseconds
+round 1 min noise budget: 1123
+max noise budget: 1135
+round 2 min noise budget: 1021
+max noise budget: 1039
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 836
+max noise budget: 853
+round 5 min noise budget: 746
+max noise budget: 764
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 542
+max noise budget: 555
+round 8 min noise budget: 451
+max noise budget: 467
+round 9 min noise budget: 358
+max noise budget: 375
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 167
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 25 runs: 204961 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1136
+round 2 min noise budget: 1020
+max noise budget: 1036
+round 3 min noise budget: 929
+max noise budget: 945
+round 4 min noise budget: 836
+max noise budget: 856
+round 5 min noise budget: 745
+max noise budget: 761
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 550
+max noise budget: 574
+round 8 min noise budget: 458
+max noise budget: 472
+round 9 min noise budget: 360
+max noise budget: 378
+round 10 min noise budget: 269
+max noise budget: 286
+round 11 min noise budget: 173
+max noise budget: 195
+homSymDec Finish! 
+min noise budget: 96
+max noise budget: 143
+the FHE_YuxDecrypt time in 26 runs: 205036 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 942
+round 4 min noise budget: 827
+max noise budget: 850
+round 5 min noise budget: 734
+max noise budget: 752
+round 6 min noise budget: 637
+max noise budget: 652
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 373
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 166
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 27 runs: 201968 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1019
+max noise budget: 1036
+round 3 min noise budget: 927
+max noise budget: 946
+round 4 min noise budget: 834
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 644
+max noise budget: 665
+round 7 min noise budget: 543
+max noise budget: 563
+round 8 min noise budget: 454
+max noise budget: 468
+round 9 min noise budget: 360
+max noise budget: 375
+round 10 min noise budget: 268
+max noise budget: 285
+round 11 min noise budget: 167
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 28 runs: 201094 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1017
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 729
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 649
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 351
+max noise budget: 373
+round 10 min noise budget: 262
+max noise budget: 278
+round 11 min noise budget: 165
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 29 runs: 202271 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 831
+max noise budget: 850
+round 5 min noise budget: 743
+max noise budget: 759
+round 6 min noise budget: 644
+max noise budget: 669
+round 7 min noise budget: 543
+max noise budget: 562
+round 8 min noise budget: 452
+max noise budget: 469
+round 9 min noise budget: 359
+max noise budget: 375
+round 10 min noise budget: 268
+max noise budget: 284
+round 11 min noise budget: 170
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 140
+the FHE_YuxDecrypt time in 30 runs: 203260 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 929
+max noise budget: 945
+round 4 min noise budget: 836
+max noise budget: 853
+round 5 min noise budget: 745
+max noise budget: 763
+round 6 min noise budget: 647
+max noise budget: 669
+round 7 min noise budget: 557
+max noise budget: 576
+round 8 min noise budget: 459
+max noise budget: 471
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 176
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 95
+max noise budget: 143
+the FHE_YuxDecrypt time in 31 runs: 203619 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 825
+max noise budget: 852
+round 5 min noise budget: 730
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 352
+max noise budget: 370
+round 10 min noise budget: 262
+max noise budget: 279
+round 11 min noise budget: 164
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 32 runs: 200235 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1017
+max noise budget: 1036
+round 3 min noise budget: 925
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 851
+round 5 min noise budget: 730
+max noise budget: 753
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 355
+max noise budget: 370
+round 10 min noise budget: 263
+max noise budget: 280
+round 11 min noise budget: 167
+max noise budget: 186
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 33 runs: 203151 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 945
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 729
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 466
+round 9 min noise budget: 355
+max noise budget: 372
+round 10 min noise budget: 266
+max noise budget: 281
+round 11 min noise budget: 168
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 134
+the FHE_YuxDecrypt time in 34 runs: 202760 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1038
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 830
+max noise budget: 850
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 465
+round 9 min noise budget: 357
+max noise budget: 375
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 167
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 35 runs: 201843 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 849
+round 5 min noise budget: 735
+max noise budget: 752
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 356
+max noise budget: 373
+round 10 min noise budget: 266
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 134
+the FHE_YuxDecrypt time in 36 runs: 201236 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 926
+max noise budget: 944
+round 4 min noise budget: 825
+max noise budget: 850
+round 5 min noise budget: 722
+max noise budget: 736
+round 6 min noise budget: 630
+max noise budget: 644
+round 7 min noise budget: 537
+max noise budget: 554
+round 8 min noise budget: 446
+max noise budget: 465
+round 9 min noise budget: 347
+max noise budget: 369
+round 10 min noise budget: 247
+max noise budget: 271
+round 11 min noise budget: 156
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 76
+max noise budget: 123
+the FHE_YuxDecrypt time in 37 runs: 202109 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 942
+round 4 min noise budget: 828
+max noise budget: 853
+round 5 min noise budget: 739
+max noise budget: 755
+round 6 min noise budget: 638
+max noise budget: 653
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 350
+max noise budget: 373
+round 10 min noise budget: 261
+max noise budget: 277
+round 11 min noise budget: 160
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 80
+max noise budget: 126
+the FHE_YuxDecrypt time in 38 runs: 200652 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1132
+round 2 min noise budget: 1017
+max noise budget: 1035
+round 3 min noise budget: 925
+max noise budget: 941
+round 4 min noise budget: 825
+max noise budget: 849
+round 5 min noise budget: 723
+max noise budget: 742
+round 6 min noise budget: 633
+max noise budget: 648
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 352
+max noise budget: 372
+round 10 min noise budget: 261
+max noise budget: 276
+round 11 min noise budget: 161
+max noise budget: 179
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 129
+the FHE_YuxDecrypt time in 39 runs: 199436 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1020
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 831
+max noise budget: 851
+round 5 min noise budget: 743
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 543
+max noise budget: 562
+round 8 min noise budget: 452
+max noise budget: 469
+round 9 min noise budget: 359
+max noise budget: 377
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 173
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 93
+max noise budget: 143
+the FHE_YuxDecrypt time in 40 runs: 203016 milliseconds
+round 1 min noise budget: 1116
+max noise budget: 1135
+round 2 min noise budget: 1020
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 827
+max noise budget: 851
+round 5 min noise budget: 737
+max noise budget: 755
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 352
+max noise budget: 372
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 164
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 85
+max noise budget: 132
+the FHE_YuxDecrypt time in 41 runs: 201995 milliseconds
+round 1 min noise budget: 1124
+max noise budget: 1136
+round 2 min noise budget: 1022
+max noise budget: 1039
+round 3 min noise budget: 932
+max noise budget: 947
+round 4 min noise budget: 838
+max noise budget: 856
+round 5 min noise budget: 748
+max noise budget: 763
+round 6 min noise budget: 646
+max noise budget: 670
+round 7 min noise budget: 549
+max noise budget: 571
+round 8 min noise budget: 458
+max noise budget: 471
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 173
+max noise budget: 195
+homSymDec Finish! 
+min noise budget: 94
+max noise budget: 146
+the FHE_YuxDecrypt time in 42 runs: 197876 milliseconds
+round 1 min noise budget: 1121
+max noise budget: 1136
+round 2 min noise budget: 1020
+max noise budget: 1041
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 837
+max noise budget: 853
+round 5 min noise budget: 744
+max noise budget: 762
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 549
+max noise budget: 571
+round 8 min noise budget: 458
+max noise budget: 473
+round 9 min noise budget: 359
+max noise budget: 375
+round 10 min noise budget: 269
+max noise budget: 285
+round 11 min noise budget: 170
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 91
+max noise budget: 140
+the FHE_YuxDecrypt time in 43 runs: 204507 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 852
+round 5 min noise budget: 738
+max noise budget: 754
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 465
+round 9 min noise budget: 347
+max noise budget: 369
+round 10 min noise budget: 253
+max noise budget: 273
+round 11 min noise budget: 159
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 80
+max noise budget: 126
+the FHE_YuxDecrypt time in 44 runs: 202818 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 645
+max noise budget: 665
+round 7 min noise budget: 542
+max noise budget: 557
+round 8 min noise budget: 450
+max noise budget: 469
+round 9 min noise budget: 358
+max noise budget: 375
+round 10 min noise budget: 266
+max noise budget: 283
+round 11 min noise budget: 168
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 45 runs: 202983 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 836
+max noise budget: 852
+round 5 min noise budget: 746
+max noise budget: 760
+round 6 min noise budget: 647
+max noise budget: 672
+round 7 min noise budget: 550
+max noise budget: 574
+round 8 min noise budget: 458
+max noise budget: 471
+round 9 min noise budget: 360
+max noise budget: 379
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 170
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 92
+max noise budget: 140
+the FHE_YuxDecrypt time in 46 runs: 204928 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 829
+max noise budget: 854
+round 5 min noise budget: 739
+max noise budget: 755
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 541
+max noise budget: 555
+round 8 min noise budget: 451
+max noise budget: 465
+round 9 min noise budget: 357
+max noise budget: 375
+round 10 min noise budget: 265
+max noise budget: 282
+round 11 min noise budget: 167
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 47 runs: 202351 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 854
+round 5 min noise budget: 744
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 543
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 357
+max noise budget: 374
+round 10 min noise budget: 265
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 134
+the FHE_YuxDecrypt time in 48 runs: 202746 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 830
+max noise budget: 850
+round 5 min noise budget: 741
+max noise budget: 758
+round 6 min noise budget: 640
+max noise budget: 664
+round 7 min noise budget: 540
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 355
+max noise budget: 372
+round 10 min noise budget: 263
+max noise budget: 283
+round 11 min noise budget: 167
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 49 runs: 201456 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 929
+max noise budget: 944
+round 4 min noise budget: 836
+max noise budget: 854
+round 5 min noise budget: 745
+max noise budget: 761
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 543
+max noise budget: 555
+round 8 min noise budget: 450
+max noise budget: 467
+round 9 min noise budget: 358
+max noise budget: 374
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 50 runs: 204170 milliseconds
+round 1 min noise budget: 1116
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 832
+max noise budget: 852
+round 5 min noise budget: 743
+max noise budget: 758
+round 6 min noise budget: 645
+max noise budget: 668
+round 7 min noise budget: 542
+max noise budget: 557
+round 8 min noise budget: 450
+max noise budget: 467
+round 9 min noise budget: 358
+max noise budget: 379
+round 10 min noise budget: 266
+max noise budget: 281
+round 11 min noise budget: 168
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 51 runs: 204042 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1017
+max noise budget: 1035
+round 3 min noise budget: 926
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 728
+max noise budget: 750
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 466
+round 9 min noise budget: 355
+max noise budget: 371
+round 10 min noise budget: 263
+max noise budget: 279
+round 11 min noise budget: 166
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 52 runs: 202741 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1036
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 827
+max noise budget: 852
+round 5 min noise budget: 737
+max noise budget: 756
+round 6 min noise budget: 638
+max noise budget: 657
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 447
+max noise budget: 464
+round 9 min noise budget: 347
+max noise budget: 372
+round 10 min noise budget: 252
+max noise budget: 273
+round 11 min noise budget: 159
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 79
+max noise budget: 126
+the FHE_YuxDecrypt time in 53 runs: 202815 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 829
+max noise budget: 850
+round 5 min noise budget: 740
+max noise budget: 757
+round 6 min noise budget: 639
+max noise budget: 657
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 349
+max noise budget: 372
+round 10 min noise budget: 259
+max noise budget: 276
+round 11 min noise budget: 160
+max noise budget: 172
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 54 runs: 202327 milliseconds
+round 1 min noise budget: 1116
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 945
+round 4 min noise budget: 834
+max noise budget: 851
+round 5 min noise budget: 743
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 450
+max noise budget: 467
+round 9 min noise budget: 358
+max noise budget: 374
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 169
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 55 runs: 203261 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 926
+max noise budget: 941
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 734
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 652
+round 7 min noise budget: 539
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 463
+round 9 min noise budget: 355
+max noise budget: 372
+round 10 min noise budget: 263
+max noise budget: 279
+round 11 min noise budget: 167
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 134
+the FHE_YuxDecrypt time in 56 runs: 202288 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 740
+max noise budget: 754
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 351
+max noise budget: 372
+round 10 min noise budget: 262
+max noise budget: 278
+round 11 min noise budget: 159
+max noise budget: 178
+homSymDec Finish! 
+min noise budget: 80
+max noise budget: 129
+the FHE_YuxDecrypt time in 57 runs: 201924 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 851
+round 5 min noise budget: 732
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 352
+max noise budget: 373
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 58 runs: 216344 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1038
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 851
+round 5 min noise budget: 738
+max noise budget: 755
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 465
+round 9 min noise budget: 352
+max noise budget: 372
+round 10 min noise budget: 262
+max noise budget: 279
+round 11 min noise budget: 165
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 133
+the FHE_YuxDecrypt time in 59 runs: 202945 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1040
+round 3 min noise budget: 928
+max noise budget: 942
+round 4 min noise budget: 835
+max noise budget: 852
+round 5 min noise budget: 744
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 671
+round 7 min noise budget: 549
+max noise budget: 570
+round 8 min noise budget: 457
+max noise budget: 471
+round 9 min noise budget: 361
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 172
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 95
+max noise budget: 140
+the FHE_YuxDecrypt time in 60 runs: 204373 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 834
+max noise budget: 852
+round 5 min noise budget: 743
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 542
+max noise budget: 557
+round 8 min noise budget: 450
+max noise budget: 465
+round 9 min noise budget: 358
+max noise budget: 376
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 167
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 61 runs: 202635 milliseconds
+round 1 min noise budget: 1122
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1036
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 852
+round 5 min noise budget: 742
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 668
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 452
+max noise budget: 468
+round 9 min noise budget: 359
+max noise budget: 375
+round 10 min noise budget: 267
+max noise budget: 284
+round 11 min noise budget: 168
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 137
+the FHE_YuxDecrypt time in 62 runs: 203742 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 853
+round 5 min noise budget: 737
+max noise budget: 758
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 466
+round 9 min noise budget: 357
+max noise budget: 376
+round 10 min noise budget: 266
+max noise budget: 280
+round 11 min noise budget: 168
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 89
+max noise budget: 137
+the FHE_YuxDecrypt time in 63 runs: 202572 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 831
+max noise budget: 855
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 666
+round 7 min noise budget: 543
+max noise budget: 557
+round 8 min noise budget: 451
+max noise budget: 467
+round 9 min noise budget: 359
+max noise budget: 375
+round 10 min noise budget: 269
+max noise budget: 285
+round 11 min noise budget: 170
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 93
+max noise budget: 140
+the FHE_YuxDecrypt time in 64 runs: 204174 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1037
+round 3 min noise budget: 927
+max noise budget: 945
+round 4 min noise budget: 827
+max noise budget: 850
+round 5 min noise budget: 735
+max noise budget: 753
+round 6 min noise budget: 639
+max noise budget: 656
+round 7 min noise budget: 542
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 355
+max noise budget: 372
+round 10 min noise budget: 264
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 189
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 133
+the FHE_YuxDecrypt time in 65 runs: 201540 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 831
+max noise budget: 852
+round 5 min noise budget: 744
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 667
+round 7 min noise budget: 546
+max noise budget: 568
+round 8 min noise budget: 455
+max noise budget: 470
+round 9 min noise budget: 360
+max noise budget: 377
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 173
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 94
+max noise budget: 140
+the FHE_YuxDecrypt time in 66 runs: 199616 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1131
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 851
+round 5 min noise budget: 730
+max noise budget: 753
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 373
+round 10 min noise budget: 263
+max noise budget: 280
+round 11 min noise budget: 165
+max noise budget: 186
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 67 runs: 204640 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 827
+max noise budget: 851
+round 5 min noise budget: 735
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 557
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 349
+max noise budget: 372
+round 10 min noise budget: 259
+max noise budget: 277
+round 11 min noise budget: 160
+max noise budget: 179
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 129
+the FHE_YuxDecrypt time in 68 runs: 205500 milliseconds
+round 1 min noise budget: 1120
+max noise budget: 1135
+round 2 min noise budget: 1020
+max noise budget: 1040
+round 3 min noise budget: 929
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 645
+max noise budget: 665
+round 7 min noise budget: 542
+max noise budget: 555
+round 8 min noise budget: 450
+max noise budget: 466
+round 9 min noise budget: 360
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 171
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 91
+max noise budget: 140
+the FHE_YuxDecrypt time in 69 runs: 205794 milliseconds
+round 1 min noise budget: 1123
+max noise budget: 1136
+round 2 min noise budget: 1020
+max noise budget: 1040
+round 3 min noise budget: 930
+max noise budget: 946
+round 4 min noise budget: 836
+max noise budget: 854
+round 5 min noise budget: 746
+max noise budget: 763
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 542
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 465
+round 9 min noise budget: 358
+max noise budget: 376
+round 10 min noise budget: 266
+max noise budget: 283
+round 11 min noise budget: 167
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 70 runs: 207431 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1133
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 851
+round 5 min noise budget: 730
+max noise budget: 751
+round 6 min noise budget: 637
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 372
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 71 runs: 205456 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1036
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 828
+max noise budget: 848
+round 5 min noise budget: 737
+max noise budget: 757
+round 6 min noise budget: 638
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 373
+round 10 min noise budget: 261
+max noise budget: 279
+round 11 min noise budget: 165
+max noise budget: 185
+homSymDec Finish! 
+min noise budget: 84
+max noise budget: 132
+the FHE_YuxDecrypt time in 72 runs: 203425 milliseconds
+round 1 min noise budget: 1116
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 851
+round 5 min noise budget: 744
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 667
+round 7 min noise budget: 543
+max noise budget: 555
+round 8 min noise budget: 450
+max noise budget: 466
+round 9 min noise budget: 358
+max noise budget: 378
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 172
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 93
+max noise budget: 140
+the FHE_YuxDecrypt time in 73 runs: 205392 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 827
+max noise budget: 851
+round 5 min noise budget: 739
+max noise budget: 757
+round 6 min noise budget: 638
+max noise budget: 657
+round 7 min noise budget: 541
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 373
+round 10 min noise budget: 262
+max noise budget: 281
+round 11 min noise budget: 164
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 84
+max noise budget: 132
+the FHE_YuxDecrypt time in 74 runs: 207050 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1130
+round 2 min noise budget: 1018
+max noise budget: 1039
+round 3 min noise budget: 927
+max noise budget: 942
+round 4 min noise budget: 835
+max noise budget: 852
+round 5 min noise budget: 743
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 544
+max noise budget: 562
+round 8 min noise budget: 455
+max noise budget: 470
+round 9 min noise budget: 360
+max noise budget: 376
+round 10 min noise budget: 268
+max noise budget: 284
+round 11 min noise budget: 169
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 89
+max noise budget: 137
+the FHE_YuxDecrypt time in 75 runs: 206328 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1039
+round 3 min noise budget: 928
+max noise budget: 942
+round 4 min noise budget: 828
+max noise budget: 851
+round 5 min noise budget: 737
+max noise budget: 756
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 539
+max noise budget: 558
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 356
+max noise budget: 375
+round 10 min noise budget: 266
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 137
+the FHE_YuxDecrypt time in 76 runs: 204241 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 836
+max noise budget: 853
+round 5 min noise budget: 745
+max noise budget: 762
+round 6 min noise budget: 645
+max noise budget: 668
+round 7 min noise budget: 542
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 466
+round 9 min noise budget: 357
+max noise budget: 372
+round 10 min noise budget: 266
+max noise budget: 284
+round 11 min noise budget: 170
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 89
+max noise budget: 137
+the FHE_YuxDecrypt time in 77 runs: 204554 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1037
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 836
+max noise budget: 854
+round 5 min noise budget: 745
+max noise budget: 761
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 550
+max noise budget: 570
+round 8 min noise budget: 457
+max noise budget: 471
+round 9 min noise budget: 360
+max noise budget: 375
+round 10 min noise budget: 270
+max noise budget: 285
+round 11 min noise budget: 177
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 98
+max noise budget: 146
+the FHE_YuxDecrypt time in 78 runs: 204852 milliseconds
+round 1 min noise budget: 1116
+max noise budget: 1136
+round 2 min noise budget: 1019
+max noise budget: 1037
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 741
+max noise budget: 758
+round 6 min noise budget: 641
+max noise budget: 665
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 349
+max noise budget: 373
+round 10 min noise budget: 259
+max noise budget: 275
+round 11 min noise budget: 160
+max noise budget: 173
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 79 runs: 202201 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1130
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 835
+max noise budget: 852
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 644
+max noise budget: 665
+round 7 min noise budget: 543
+max noise budget: 558
+round 8 min noise budget: 450
+max noise budget: 466
+round 9 min noise budget: 358
+max noise budget: 374
+round 10 min noise budget: 269
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 80 runs: 204931 milliseconds
+round 1 min noise budget: 1123
+max noise budget: 1136
+round 2 min noise budget: 1022
+max noise budget: 1038
+round 3 min noise budget: 930
+max noise budget: 945
+round 4 min noise budget: 836
+max noise budget: 854
+round 5 min noise budget: 745
+max noise budget: 762
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 544
+max noise budget: 562
+round 8 min noise budget: 453
+max noise budget: 469
+round 9 min noise budget: 359
+max noise budget: 377
+round 10 min noise budget: 269
+max noise budget: 286
+round 11 min noise budget: 177
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 97
+max noise budget: 145
+the FHE_YuxDecrypt time in 81 runs: 204877 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1037
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 828
+max noise budget: 852
+round 5 min noise budget: 737
+max noise budget: 753
+round 6 min noise budget: 638
+max noise budget: 650
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 356
+max noise budget: 373
+round 10 min noise budget: 264
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 188
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 132
+the FHE_YuxDecrypt time in 82 runs: 203527 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1136
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 926
+max noise budget: 942
+round 4 min noise budget: 825
+max noise budget: 849
+round 5 min noise budget: 724
+max noise budget: 742
+round 6 min noise budget: 633
+max noise budget: 648
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 465
+round 9 min noise budget: 355
+max noise budget: 371
+round 10 min noise budget: 265
+max noise budget: 282
+round 11 min noise budget: 168
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 136
+the FHE_YuxDecrypt time in 83 runs: 201628 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1017
+max noise budget: 1034
+round 3 min noise budget: 926
+max noise budget: 942
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 728
+max noise budget: 750
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 557
+round 8 min noise budget: 448
+max noise budget: 463
+round 9 min noise budget: 347
+max noise budget: 370
+round 10 min noise budget: 252
+max noise budget: 271
+round 11 min noise budget: 158
+max noise budget: 173
+homSymDec Finish! 
+min noise budget: 79
+max noise budget: 126
+the FHE_YuxDecrypt time in 84 runs: 201722 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 836
+max noise budget: 852
+round 5 min noise budget: 744
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 668
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 451
+max noise budget: 468
+round 9 min noise budget: 358
+max noise budget: 375
+round 10 min noise budget: 267
+max noise budget: 284
+round 11 min noise budget: 170
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 91
+max noise budget: 143
+the FHE_YuxDecrypt time in 85 runs: 203816 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1020
+max noise budget: 1036
+round 3 min noise budget: 929
+max noise budget: 944
+round 4 min noise budget: 835
+max noise budget: 853
+round 5 min noise budget: 744
+max noise budget: 760
+round 6 min noise budget: 645
+max noise budget: 669
+round 7 min noise budget: 542
+max noise budget: 556
+round 8 min noise budget: 452
+max noise budget: 466
+round 9 min noise budget: 359
+max noise budget: 376
+round 10 min noise budget: 267
+max noise budget: 284
+round 11 min noise budget: 167
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 87
+max noise budget: 133
+the FHE_YuxDecrypt time in 86 runs: 203569 milliseconds
+round 1 min noise budget: 1121
+max noise budget: 1136
+round 2 min noise budget: 1024
+max noise budget: 1041
+round 3 min noise budget: 933
+max noise budget: 951
+round 4 min noise budget: 838
+max noise budget: 855
+round 5 min noise budget: 747
+max noise budget: 763
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 548
+max noise budget: 570
+round 8 min noise budget: 458
+max noise budget: 470
+round 9 min noise budget: 361
+max noise budget: 375
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 170
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 91
+max noise budget: 137
+the FHE_YuxDecrypt time in 87 runs: 202573 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 942
+round 4 min noise budget: 825
+max noise budget: 849
+round 5 min noise budget: 727
+max noise budget: 752
+round 6 min noise budget: 634
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 353
+max noise budget: 376
+round 10 min noise budget: 263
+max noise budget: 279
+round 11 min noise budget: 167
+max noise budget: 185
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 88 runs: 203252 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1018
+max noise budget: 1034
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 827
+max noise budget: 851
+round 5 min noise budget: 738
+max noise budget: 754
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 352
+max noise budget: 371
+round 10 min noise budget: 262
+max noise budget: 280
+round 11 min noise budget: 161
+max noise budget: 180
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 132
+the FHE_YuxDecrypt time in 89 runs: 204555 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 943
+round 4 min noise budget: 830
+max noise budget: 852
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 549
+max noise budget: 571
+round 8 min noise budget: 457
+max noise budget: 471
+round 9 min noise budget: 360
+max noise budget: 377
+round 10 min noise budget: 269
+max noise budget: 284
+round 11 min noise budget: 168
+max noise budget: 191
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 90 runs: 204835 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 944
+round 4 min noise budget: 825
+max noise budget: 850
+round 5 min noise budget: 728
+max noise budget: 751
+round 6 min noise budget: 636
+max noise budget: 649
+round 7 min noise budget: 540
+max noise budget: 557
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 351
+max noise budget: 371
+round 10 min noise budget: 261
+max noise budget: 276
+round 11 min noise budget: 160
+max noise budget: 179
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 129
+the FHE_YuxDecrypt time in 91 runs: 205433 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 837
+max noise budget: 854
+round 5 min noise budget: 744
+max noise budget: 761
+round 6 min noise budget: 647
+max noise budget: 669
+round 7 min noise budget: 554
+max noise budget: 571
+round 8 min noise budget: 458
+max noise budget: 473
+round 9 min noise budget: 360
+max noise budget: 375
+round 10 min noise budget: 268
+max noise budget: 284
+round 11 min noise budget: 175
+max noise budget: 192
+homSymDec Finish! 
+min noise budget: 95
+max noise budget: 143
+the FHE_YuxDecrypt time in 92 runs: 204739 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1134
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 825
+max noise budget: 850
+round 5 min noise budget: 729
+max noise budget: 750
+round 6 min noise budget: 637
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 355
+max noise budget: 372
+round 10 min noise budget: 263
+max noise budget: 281
+round 11 min noise budget: 166
+max noise budget: 187
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 93 runs: 205978 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1034
+round 3 min noise budget: 928
+max noise budget: 944
+round 4 min noise budget: 830
+max noise budget: 851
+round 5 min noise budget: 742
+max noise budget: 758
+round 6 min noise budget: 644
+max noise budget: 666
+round 7 min noise budget: 542
+max noise budget: 558
+round 8 min noise budget: 450
+max noise budget: 466
+round 9 min noise budget: 358
+max noise budget: 376
+round 10 min noise budget: 267
+max noise budget: 283
+round 11 min noise budget: 168
+max noise budget: 193
+homSymDec Finish! 
+min noise budget: 88
+max noise budget: 137
+the FHE_YuxDecrypt time in 94 runs: 206366 milliseconds
+round 1 min noise budget: 1119
+max noise budget: 1135
+round 2 min noise budget: 1019
+max noise budget: 1035
+round 3 min noise budget: 928
+max noise budget: 942
+round 4 min noise budget: 831
+max noise budget: 853
+round 5 min noise budget: 743
+max noise budget: 761
+round 6 min noise budget: 646
+max noise budget: 669
+round 7 min noise budget: 549
+max noise budget: 571
+round 8 min noise budget: 458
+max noise budget: 471
+round 9 min noise budget: 361
+max noise budget: 376
+round 10 min noise budget: 269
+max noise budget: 285
+round 11 min noise budget: 174
+max noise budget: 194
+homSymDec Finish! 
+min noise budget: 95
+max noise budget: 143
+the FHE_YuxDecrypt time in 95 runs: 206270 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1130
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 926
+max noise budget: 942
+round 4 min noise budget: 825
+max noise budget: 851
+round 5 min noise budget: 725
+max noise budget: 748
+round 6 min noise budget: 634
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 555
+round 8 min noise budget: 448
+max noise budget: 465
+round 9 min noise budget: 350
+max noise budget: 373
+round 10 min noise budget: 258
+max noise budget: 276
+round 11 min noise budget: 160
+max noise budget: 178
+homSymDec Finish! 
+min noise budget: 80
+max noise budget: 129
+the FHE_YuxDecrypt time in 96 runs: 204978 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1133
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 945
+round 4 min noise budget: 832
+max noise budget: 852
+round 5 min noise budget: 742
+max noise budget: 759
+round 6 min noise budget: 645
+max noise budget: 664
+round 7 min noise budget: 543
+max noise budget: 556
+round 8 min noise budget: 450
+max noise budget: 465
+round 9 min noise budget: 357
+max noise budget: 374
+round 10 min noise budget: 265
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 97 runs: 205960 milliseconds
+round 1 min noise budget: 1117
+max noise budget: 1129
+round 2 min noise budget: 1018
+max noise budget: 1035
+round 3 min noise budget: 927
+max noise budget: 943
+round 4 min noise budget: 828
+max noise budget: 852
+round 5 min noise budget: 738
+max noise budget: 755
+round 6 min noise budget: 638
+max noise budget: 650
+round 7 min noise budget: 539
+max noise budget: 556
+round 8 min noise budget: 448
+max noise budget: 464
+round 9 min noise budget: 350
+max noise budget: 374
+round 10 min noise budget: 260
+max noise budget: 281
+round 11 min noise budget: 159
+max noise budget: 173
+homSymDec Finish! 
+min noise budget: 81
+max noise budget: 126
+the FHE_YuxDecrypt time in 98 runs: 206813 milliseconds
+round 1 min noise budget: 1118
+max noise budget: 1134
+round 2 min noise budget: 1017
+max noise budget: 1035
+round 3 min noise budget: 926
+max noise budget: 943
+round 4 min noise budget: 826
+max noise budget: 849
+round 5 min noise budget: 734
+max noise budget: 752
+round 6 min noise budget: 638
+max noise budget: 651
+round 7 min noise budget: 540
+max noise budget: 555
+round 8 min noise budget: 449
+max noise budget: 464
+round 9 min noise budget: 357
+max noise budget: 373
+round 10 min noise budget: 265
+max noise budget: 281
+round 11 min noise budget: 167
+max noise budget: 190
+homSymDec Finish! 
+min noise budget: 86
+max noise budget: 132
+the FHE_YuxDecrypt time in 99 runs: 204938 milliseconds
+Average FHE_YuxDecrypt time over 100 runs: 203.25 seconds
+Average throughput over 100 runs: 302.29 KB/min
+
+=== Test completed with exit status: 0 ===
