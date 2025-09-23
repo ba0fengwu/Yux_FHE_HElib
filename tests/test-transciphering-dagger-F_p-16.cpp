@@ -15,17 +15,14 @@ using namespace NTL;
 
 static long mValues[][4] = { 
   { 65537,  65536,  853, 17},
-//   { 65537,  131072,  1250, 6},我设置的12轮
   { 65537,  131072,  1320, 6},
-//   { 65537,  131072,  1500, 10},我原始设置的14轮参数
   { 65537,  131072,  1400, 10},
-//   { 65537,  131072,  1320, 6},//原始的参数设置
 };
 
 
 void test_homo_decryption(int test_round, const vector<vector<uint64_t>>& test_data) {
-    int i, Nr = pROUND;
-    int Nk = 16;
+    int i, Nr = pROUND;// Nr is round number
+    int Nk = 16;// a block has Nk Words
     int nBlocks = 1;
     long plain_mod = 65537;
     long roundKeySize = (Nr + 1) * Nk;

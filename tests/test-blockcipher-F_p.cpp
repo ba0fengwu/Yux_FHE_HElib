@@ -74,22 +74,6 @@ void test_encryption(int Nr, int test_round, const vector<vector<uint64_t>>& tes
          << fixed << setprecision(2) << throughput 
          << " KB/min" << endl;
 
-    // printf("Average throughput for %d encryptions: %.2f KB/min\n", test_round, throughput);
-
-    // // Verification of decryption with last test data
-    // uint64_t RoundKey_invert[roundKeySize];
-    // cipher.decRoundKey(RoundKey_invert, RoundKey);
-    // uint64_t deced[Nk];
-    // cipher.decryption(deced, enced, RoundKey_invert);
-    
-    // bool success = true;
-    // for(i = 0; i < Nk; i++) {
-    //     if(deced[i] != in[i]) {
-    //         success = false;
-    //         break;
-    //     }
-    // }
-    // printf("Decryption verification: %s\n\n", success ? "Success" : "Failure");
 }
 
 vector<vector<uint64_t>> read_test_data(const string& filename, int test_data_num) {
@@ -124,7 +108,6 @@ vector<vector<uint64_t>> read_test_data(const string& filename, int test_data_nu
 int main() {
 
     const int TEST_ROUND = 1000;
-    // vector<vector<uint64_t>> test_data = read_test_data("/home/dwkong/FHE_friendly/Yux_FHE_HElib/tests/random-plain.txt", TEST_ROUND);
     vector<vector<uint64_t>> test_data = read_test_data("../tests/random-plain.txt", TEST_ROUND);
     
     if (test_data.size() != TEST_ROUND) {
