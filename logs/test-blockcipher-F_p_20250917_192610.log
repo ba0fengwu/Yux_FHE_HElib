@@ -1,0 +1,12 @@
+=== Running ./tests/test-blockcipher-F_p at Wed Sep 17 19:26:10 CST 2025 ===
+Nr = 9 Test results: 
+Average symmetric encryption time over 1000 runs: 6.46e-06 seconds
+Average throughput over 1000 runs: 290141.95 KB/min
+Nr = 12 Test results: 
+Average symmetric encryption time over 1000 runs: 8.73e-06 seconds
+Average throughput over 1000 runs: 214797.42 KB/min
+Nr = 14 Test results: 
+Average symmetric encryption time over 1000 runs: 9.78e-06 seconds
+Average throughput over 1000 runs: 191753.12 KB/min
+
+=== Test completed with exit status: 0 ===

@@ -9,7 +9,7 @@
 #include <helib/ArgMap.h>
 #include <helib/DoubleCRT.h>
 
-#include "../Yux/Yux-dagger-F_p.h"
+#include "../symmetric/Yux-dagger-F_p.h"
 #include "params.h"
 #include "utils.h"
 

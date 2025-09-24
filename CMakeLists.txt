@@ -25,7 +25,7 @@ endif()
 
 
 # add symmetric library
-aux_source_directory("${CMAKE_SOURCE_DIR}/Yux" SYMMETRIC_SRC_LIST)
+aux_source_directory("${CMAKE_SOURCE_DIR}/symmetric" SYMMETRIC_SRC_LIST)
 add_library(Symmetric ${SYMMETRIC_SRC_LIST})
 target_include_directories(Symmetric PUBLIC "/usr/local/helib_pack/include")
 

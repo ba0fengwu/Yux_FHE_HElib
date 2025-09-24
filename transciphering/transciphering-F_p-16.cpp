@@ -186,7 +186,8 @@ void Transcipher16_F_p::FHE_YuxDecrypt(vector<Ctxt>& eData, const vector<Ctxt>& 
       eData[j] -= symKey[key_id];
     }
   }
-  // cout << "homSymDec Finish! \n";
+  cout << "homSymDec Finish! \n";
+  print_noise(eData);
   // return to natural PrimeSet to save memery
   for (int i = 0; i < eData.size(); i++)
     eData[i].bringToSet(eData[i].naturalPrimeSet());
